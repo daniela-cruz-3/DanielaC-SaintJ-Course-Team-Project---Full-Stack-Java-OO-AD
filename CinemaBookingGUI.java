@@ -141,8 +141,8 @@ public class CinemaBookingGUI {
     private void reserveSeat() {
         String selectedTheater = (String) theaterComboBox.getSelectedItem();
         String selectedShowtime = (String) showtimeComboBox.getSelectedItem();
-        int selectedRow = 0; // Placeholder for row selection logic
-        int selectedCol = 0; // Placeholder for column selection logic
+        int selectedRow = 0; 
+        int selectedCol = 0; 
 
         // Find the theater and showtime
         Theater selectedTheaterObj = null;
