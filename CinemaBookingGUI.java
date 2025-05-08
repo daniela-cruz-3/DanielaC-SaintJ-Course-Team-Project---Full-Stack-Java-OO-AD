@@ -50,7 +50,7 @@ public class CinemaBookingGUI {
         updateShowtimes();
 
         // Seat Selector Panel
-        seatPanel = new JPanel(new GridLayout(5, 5)); // Assuming 5x5 grid of seats (adjust as needed)
+        seatPanel = new JPanel(new GridLayout(5, 5)); 
         updateSeatLayout();
 
         // Reserve Button
@@ -114,8 +114,8 @@ public class CinemaBookingGUI {
 
     private void updateSeatLayout() {
         seatPanel.removeAll();
-        for (int i = 0; i < 5; i++) { // Assuming 5 rows of seats
-            for (int j = 0; j < 5; j++) { // Assuming 5 columns per row
+        for (int i = 0; i < 5; i++) { 
+            for (int j = 0; j < 5; j++) { 
                 JButton seatButton = new JButton((i + 1) + "-" + (j + 1));
                 seatButton.setBackground(Color.GREEN);
                 seatButton.addActionListener(new ActionListener() {
